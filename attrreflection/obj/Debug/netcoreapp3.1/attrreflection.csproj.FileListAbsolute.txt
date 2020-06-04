@@ -1,0 +1,12 @@
+/Users/gunjanpabreja/attrreflection/bin/Debug/netcoreapp3.1/attrreflection.deps.json
+/Users/gunjanpabreja/attrreflection/bin/Debug/netcoreapp3.1/attrreflection.runtimeconfig.json
+/Users/gunjanpabreja/attrreflection/bin/Debug/netcoreapp3.1/attrreflection.runtimeconfig.dev.json
+/Users/gunjanpabreja/attrreflection/bin/Debug/netcoreapp3.1/attrreflection.dll
+/Users/gunjanpabreja/attrreflection/bin/Debug/netcoreapp3.1/attrreflection.pdb
+/Users/gunjanpabreja/attrreflection/obj/Debug/netcoreapp3.1/attrreflection.csprojAssemblyReference.cache
+/Users/gunjanpabreja/attrreflection/obj/Debug/netcoreapp3.1/attrreflection.csproj.CoreCompileInputs.cache
+/Users/gunjanpabreja/attrreflection/obj/Debug/netcoreapp3.1/attrreflection.AssemblyInfoInputs.cache
+/Users/gunjanpabreja/attrreflection/obj/Debug/netcoreapp3.1/attrreflection.AssemblyInfo.cs
+/Users/gunjanpabreja/attrreflection/obj/Debug/netcoreapp3.1/attrreflection.dll
+/Users/gunjanpabreja/attrreflection/obj/Debug/netcoreapp3.1/attrreflection.pdb
+/Users/gunjanpabreja/attrreflection/obj/Debug/netcoreapp3.1/attrreflection.genruntimeconfig.cache

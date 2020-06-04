@@ -1,0 +1,18 @@
+<link rel="stylesheet"
+ href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+ integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+  crossorigin="anonymous">
+
+  <!-- <ul class="list-group">
+    <li class="list-group-item" *ngFor = "let posts of videos">
+      <h3>{{ posts.title }}</h3>
+      <p>{{ posts.url }}</p>
+      <p>{{ posts.description }}</p>
+    </li>
+  </ul> -->
+
+<ul class="list-group" style="margin-top: 10%;">
+    <li style="margin-left: 3%;" class="list-group-item list-group-item-action list-group-item-secondary" (click) = "Onselect(vdo)"
+      *ngFor="let vdo of video"><br><button  class="btn btn-outline-dark">{{ vdo.title }}</button><br>
+    </li>
+</ul>

@@ -1,0 +1,23 @@
+<link rel="stylesheet"
+ href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+ integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+  crossorigin="anonymous">
+
+<div class="container">
+    <iframe style="margin-top: 10%;" [src] ="videos.url | safe" width="300%" height="300" allowfullscreen></iframe>
+    <form>
+        <div class="form-group">
+            <input type="input" *ngIf="editTitle" class="form-control" style="width: 200%;" name = "title" required placeholder="title"
+            [(ngModel)] = "videos.title" >
+        </div>
+        <h3 *ngIf="!editTitle" (click) = "onTitleClick()">{{ videos.title }}</h3>
+        <div class="form-group">
+            <input type="input" class="form-control" style="width: 200%;" name = "url" required placeholder="url"
+            [(ngModel)] = "videos.url" >
+        </div>
+        <div class="form-group">
+            <textarea name="desc" class = "form-control" style="width: 200%;" rows="3" [(ngModel)] = "videos.description"></textarea> 
+        </div>
+        <button type="button" (click) = "deletevideo()" class="btn btn-danger">Delete Video</button>
+    </form>
+</div> 

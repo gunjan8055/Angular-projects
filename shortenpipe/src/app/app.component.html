@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-2">
+      <input type="text" [(ngModel)] = "filteredStatus">
+      <hr>
+      <button class="btn btn-primary" (click) = "onAddServer()">Add Server</button>
+      <br><br>
+      <h2>App Status: {{ appStatus | async }}</h2>
+      <ul class="list-group">
+        <li class="list-group-item"
+        *ngFor = "let server of servers | filter : filteredStatus : 'status'"
+        [ngClass] = "getstatusclass(server)">
+          <span class="badge" >
+            {{ server.status }}
+          </span>
+          <strong>
+            {{ server.name | shorten:8 }}
+          </strong> |
+           {{ server.instanceType | uppercase }} | 
+          {{ server.started | date :'fullDate' | uppercase }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
